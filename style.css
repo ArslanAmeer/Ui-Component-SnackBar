@@ -1,7 +1,7 @@
 .snackbar-wrapper{
-    display: inline-block;
+    display: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -9,10 +9,13 @@
     -ms-user-select: none;
     user-select: none;
 
-    position: absolute;
-    top: 90%; left: 50%;
+    position: fixed;
+    top: 110vh; left: 50%;
     transform: translate(-50%, -50%);
     
+    opacity: 0;
+    
+    transition: top .5s ease-in-out, opacity .7s ease-in-out;
 }
 
 .snackbar{
