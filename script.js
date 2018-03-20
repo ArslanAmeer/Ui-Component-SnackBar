@@ -3,28 +3,46 @@
 
 var btn = document.querySelector(".btn");
 
+var bar = document.querySelector(".snackbar-wrapper");
+
 btn.addEventListener("click", () => {
 
-    var bar = document.querySelector(".snackbar-wrapper");
-    
-    bar.style.display = "inline-block";
+    btn.disabled = true;
 
-    setTimeout(() => {
-        bar.style.opacity = 1;
-        bar.style.top = "90vh";
-    
-        setTimeout(() => {
-            bar.style.opacity = 0;
-            bar.style.top = "110vh";
+    showPromise().then(setTimeout(() => {
 
-            setTimeout(() => {
-                bar.style.display = "none";
-            },1000)
-            
-        },2000);
+        hidePromise().then(() => {
 
-    },10);
+            btn.disabled = false;
 
-    
-    
+        });;
+
+    }, 3000));
+
 });
+
+var showPromise = () => {
+    return new Promise((resolve, reject) => {
+
+        bar.style.display = "inline-block";
+
+        setTimeout(() => {
+            bar.style.opacity = 1;
+            bar.style.top = "90vh";
+            resolve();
+        }, 10);
+    });
+}
+
+var hidePromise = () => {
+    return new Promise((resolve, reject) => {
+
+        bar.style.opacity = 0;
+        bar.style.top = "110vh";
+
+        setTimeout(() => {
+            bar.style.display = "none";
+            resolve();
+        }, 500);
+    });
+}
