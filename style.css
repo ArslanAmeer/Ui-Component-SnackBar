@@ -1,0 +1,30 @@
+.snackbar-wrapper{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    top: 90%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.snackbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.snackbar > img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.snackbar > p{
+    padding: 0; margin: 0;
+}
