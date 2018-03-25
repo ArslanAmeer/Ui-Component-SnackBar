@@ -1,7 +1,7 @@
 # Ui-Component-SnackBar
 ## A Modern and Elegent Snacbar Notification made with JS HTML5 &amp; Css.
 
-![](snackBar-demo.png)
+![](snackBar-demo.gif)
 ----------------------------------------------------------------
 **TRY IT NOW**: [SnackBar](https://arslanameer.github.io/Ui-Component-SnackBar/)
 
