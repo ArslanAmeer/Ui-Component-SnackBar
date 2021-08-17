@@ -5,6 +5,6 @@
 ----------------------------------------------------------------
 **TRY IT NOW**: [SnackBar](https://arslanameer.github.io/Ui-Component-SnackBar/)
 
-Worked with Js-Promises on Js scripting back-end logic.
+Worked with Javascript Promises.
 
 _(Arslan Ameer)_
